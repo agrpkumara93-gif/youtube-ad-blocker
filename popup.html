@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>YouTube Ad Blocker</title>
+  <style>
+    body { font-family: Arial, sans-serif; width: 290px; margin: 0; padding: 18px; color: #202124; background: #fff; }
+    h1 { font-size: 18px; margin: 0 0 14px; }
+    .row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 9px 0; border-bottom: 1px solid #eee; font-size: 14px; }
+    .status { margin-top: 14px; padding: 10px; border-radius: 8px; background: #f5f5f5; font-size: 13px; line-height: 1.4; }
+    .muted { color: #666; font-size: 12px; margin-top: 10px; line-height: 1.4; }
+    input[type="checkbox"] { width: 18px; height: 18px; }
+  </style>
+</head>
+<body>
+  <h1>YouTube Ad Blocker</h1>
+
+  <div class="row">
+    <span>Enabled</span>
+    <input id="enabled" type="checkbox">
+  </div>
+
+  <div class="row">
+    <span>Auto-skip ads</span>
+    <input id="autoSkip" type="checkbox">
+  </div>
+
+  <div class="row">
+    <span>Hide ad elements</span>
+    <input id="hideAds" type="checkbox">
+  </div>
+
+  <div class="row">
+    <span>Fast-forward unskippable ads</span>
+    <input id="fastForwardAds" type="checkbox">
+  </div>
+
+  <div class="status" id="status">Loading…</div>
+  <div class="muted">YouTube can change its page structure, so selectors may occasionally need updating.</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
